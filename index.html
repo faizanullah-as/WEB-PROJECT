@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+  <div class="app">
+
+    <!-- Search -->
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Search city">
+      <button onclick="getWeather()">Search</button>
+      <button onclick="clearData()">Clear</button>
+    </div>
+
+    <!-- Current Weather -->
+    <div class="current">
+      <h2 id="city">City</h2>
+      <div class="main-temp">
+        <span id="weatherIcon">☁️</span>
+        <h1 id="temp">--°C</h1>
+      </div>
+      <p id="condition">Condition</p>
+      <p id="time">Local Time</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info">
+      <div class="card">💧 Humidity<br><span id="humidity">--</span>%</div>
+      <div class="card">🌬 Wind<br><span id="wind">--</span> km/h</div>
+      <div class="card">🤒 Feels Like<br><span id="feels">--</span>°C</div>
+      <div class="card">👁 Visibility<br><span id="vis">--</span> km</div>
+      <div class="card">🌫 AQI<br><span id="aqi">--</span></div>
+      <div class="card">🌥 Pressure<br><span id="pressure">--</span> mb</div>
+    </div>
+
+    <!-- Forecast -->
+    <h3>7‑Day Forecast</h3>
+    <div class="forecast" id="forecast"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
